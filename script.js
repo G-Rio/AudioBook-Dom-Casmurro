@@ -70,6 +70,30 @@ function voltarFaixa(){
         trocarNomeFaixa();
 }
 
+//Aumentar volume
+function aumentarVolume(){
+    if(audioCapitulo.volume < 1){
+        audioCapitulo.volume += 0.1;
+    }
+}
+
+//Diminuir volume 
+function diminuirVolume(){
+    if(audioCapitulo.volume > 0){
+        audioCapitulo.volume -= 0.1;
+    }
+}
+
+//Mutar / desmutar
+function mutar(){
+    if(audioCapitulo.muted){
+        audioCapitulo.muted = false;
+    }
+    else{
+        audioCapitulo.muted = true;
+    }
+}
+
 
 botaoVoltar.addEventListener('click', voltarFaixa);
 botaoAvancar.addEventListener('click', proximaFaixa);

@@ -44,8 +44,13 @@ button {
   font-size: 4rem;
 }
 
-#container-botoes {
+#container-botoes, #container-volume {
   width: 100%;
   display: flex;
   justify-content: space-around;
 }
+
+#volume-mais, #volume-mudo, #volume-menos{
+  font-size: 2rem;
+}
+
